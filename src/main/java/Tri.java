@@ -11,12 +11,4 @@ public class Tri {
 			tab[j]=flag;
 		}
 	}
-	public static void main(String[] args){
-		int[] tab={2529,58921,59283,41587,5896,0,8};
-		triInsertionTableau(tab);
-		System.out.print("|");
-		for(int i=0; i<tab.length; i++){
-			System.out.print(tab[i]+"|");
-		}
-	}
 }
