@@ -1,7 +1,7 @@
 public class Recherche{
 	
 	
-	
+	public int test;
 	
 	
 	
