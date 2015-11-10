@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eba7427065b4b0a7fe633dac808b697c334a8ed3
 
 public class Tri {
 	
