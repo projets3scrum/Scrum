@@ -1,5 +1,9 @@
+import org.junit.Test;
+
 
 public class Tri {
+	
+	@Test
 	public static void triInsertionTableau(int[] tab){ //tri par insertion
 		int n=tab.length;
 		int j;
