@@ -6,29 +6,30 @@ public class Recherche{
 	
 	
 	
-	public void rechercheDansTableau(int tab[], int val)
-	 {
-        int milieu;
-        int debut=0;
-        int fin=tab.length;
-        boolean trouve = false;
-        while(trouve==false && debut<=fin)
-        {
-        	  milieu=tab.length/2;
-        	  if(tab[milieu]==val)
-        		  System.out.println(val + " Trouver");
-        	  else if(val >tab[milieu])
-        	  {
-        		  debut=milieu;
-        		  milieu=fin-(milieu/2);
-        	  }
-        	  else if (val < tab[milieu])
-        	  {
-        		  fin=milieu;
-        		  milieu/=2;
-        	  }
-        }
-    }
+	public int rechercheDansTableau(int tab[], int val)
+	{
+		  boolean trouve;  
+		  int debut;
+		  int fin;
+		  int milieu;
+		  
+		  trouve = false; 
+		  debut = 0;
+		  fin = tab.length; 
+		  
+		
+		  while(!trouve && ((fin - debut) > 1)){
+	
+			  milieu = (debut + fin)/2; 
+		    
+		    trouve = (tab[milieu] == val); 
+		    if(tab[milieu] > val) fin = milieu;
+		    else debut = milieu; 
+		    }
+		  
+		  if(tab[debut] == val) return 1;
+		  else return -1;
+	}
 	
 	
 	
