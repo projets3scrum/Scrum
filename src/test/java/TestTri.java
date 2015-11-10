@@ -3,6 +3,11 @@ import org.junit.Test;
 
 public class TestTri {
 	
+	@Test
+	public static void testTri1(){
+		int[] tab5={2,5,6,4,8};
+		Tri.triInsertionTableau(tab5);
+	}
 	
 	public static void main(String[] args){
 		int[] tab1={500};
@@ -21,6 +26,8 @@ public class TestTri {
 		
 		System.out.print("Quatrieme tri");
 		Tri.triInsertionTableau(tab4);
+		
+		testTri1();
 		
 	}
 	
