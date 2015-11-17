@@ -1,12 +1,6 @@
 public class Recherche{
 		
-
-	
-	
-	
-	
-	
-	public int rechercheDansTableau(int tab[], int val)
+	public static boolean rechercheDansTableau(int tab[], int val)
 	{
 		  boolean trouve;  
 		  int debut;
@@ -27,8 +21,8 @@ public class Recherche{
 		    else debut = milieu; 
 		    }
 		  
-		  if(tab[debut] == val) return 1;
-		  else return -1;
+		  if(tab[debut] == val) return true;
+		  else return false;
 	}
 	
 	
