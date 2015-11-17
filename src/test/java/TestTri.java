@@ -56,8 +56,7 @@ public class TestTri {
 			if(tab5[i]!=resultatAttendu[i])
 				flag=false;
 		}
-		if(flag)
-			System.out.println("Test 5 Valeurs positives/négatives réussi");
+		assertTrue(flag);
 	}
 	
 	public void afficherTab(int[] tab){
