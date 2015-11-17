@@ -59,6 +59,7 @@ public class TestTri {
 		assertTrue(flag);
 	}
 	
+	
 	public void afficherTab(int[] tab){
 		System.out.print("|");
 		for(int i=0; i<tab.length; i++){
