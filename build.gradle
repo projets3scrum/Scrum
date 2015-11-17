@@ -25,6 +25,6 @@ jacocoTestReport {
 
 findbugs {
 		toolVersion = "3.0.1"
-		effort = "max"
-		reportLevel = "low"
+		effort = "min"
+		reportLevel = "high"
 }
