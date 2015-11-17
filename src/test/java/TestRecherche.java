@@ -16,7 +16,7 @@ public class TestRecherche {
 			assertTrue(Recherche.rechercheDansTableau(tab,10));
 	}
 	
-	
+	@Test
 	public void testNbPairDébut(){
 		int tab[]={1,2,3,5,6,8,9};
 			assertTrue(Recherche.rechercheDansTableau(tab,1));
