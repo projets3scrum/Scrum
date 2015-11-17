@@ -1,3 +1,5 @@
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 
@@ -8,16 +10,14 @@ public class TestTri {
 		int[] tab1={500};
 		int[] resultatAttendu={500};
 		Tri.triInsertionTableau(tab1);
-		if(tab1[0]==resultatAttendu[0])
-			System.out.println("Test 1 Valeur réussi");
+		assertTrue(tab1[0]==resultatAttendu[0]);
 	}
 	
 	@Test
 	public void testTableauVide(){
 		int[] tab2={};
 		Tri.triInsertionTableau(tab2);
-		if(tab2.length==0)
-			System.out.println("Test 2 Tableau Vide réussi");
+		assertTrue(tab2.length==0);
 	}
 	
 	@Test
@@ -30,8 +30,7 @@ public class TestTri {
 			if(tab3[i]!=resultatAttendu[i])
 				flag=false;
 		}
-		if(flag)
-			System.out.println("Test 3 Valeurs négatives réussi");
+		assertTrue(flag);
 	}
 	
 	@Test
@@ -44,22 +43,7 @@ public class TestTri {
 			if(tab4[i]!=resultatAttendu[i])
 				flag=false;
 		}
-		if(flag)
-			System.out.println("Test 4 Valeurs identiques réussi");
-	}
-	
-	@Test
-	public void testPositifNegatif(){
-		int[] tab5={-3,5,-9,4,-6,-9,-7,2,-1,0};
-		int[] resultatAttendu={-9,-9,-7,-6,-3,-1,0,2,4,5};
-		Tri.triInsertionTableau(tab5);
-		boolean flag=true;
-		for(int i=0; i<tab5.length; i++){
-			if(tab5[i]!=resultatAttendu[i])
-				flag=false;
-		}
-		if(flag)
-			System.out.println("Test 5 Valeurs positives/négatives réussi");
+		assertTrue(flag);
 	}
 	
 	public void afficherTab(int[] tab){
