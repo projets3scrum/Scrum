@@ -48,6 +48,20 @@ public class TestTri {
 			System.out.println("Test 4 Valeurs identiques réussi");
 	}
 	
+	@Test
+	public void testPositifNegatif(){
+		int[] tab5={-3,5,-9,4,-6,-9,-7,2,-1,0};
+		int[] resultatAttendu={-9,-9,-7,-6,-3,-1,0,2,4,5};
+		Tri.triInsertionTableau(tab5);
+		boolean flag=true;
+		for(int i=0; i<tab5.length; i++){
+			if(tab5[i]!=resultatAttendu[i])
+				flag=false;
+		}
+		if(flag)
+			System.out.println("Test 5 Valeurs positives/négatives réussi");
+	}
+	
 	public void afficherTab(int[] tab){
 		System.out.print("|");
 		for(int i=0; i<tab.length; i++){
