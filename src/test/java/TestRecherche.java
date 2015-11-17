@@ -13,7 +13,7 @@ public class TestRecherche {
 	@Test
 	public void testNbPair2(){
 		int tab[]={1,2,3,5,6,8};
-			assertTrue(Recherche.rechercheDansTableau(tab,10));
+			assertFalse(Recherche.rechercheDansTableau(tab,10));
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ public class TestRecherche {
 	@Test
 	public void testNbPairDébut2(){
 		int tab[]={1,2,3,5,6,8,9};
-			assertTrue(Recherche.rechercheDansTableau(tab,0));
+			assertFalse(Recherche.rechercheDansTableau(tab,0));
 	}
 	
 	
@@ -38,7 +38,7 @@ public class TestRecherche {
 	@Test
 	public void testRechercheDernierePosNbPaire2(){
 		int tab[]={1,2,3,5,6,8};
-			assertTrue(Recherche.rechercheDansTableau(tab,9));
+			assertFalse(Recherche.rechercheDansTableau(tab,9));
 	}
 	
 	
@@ -53,7 +53,7 @@ public class TestRecherche {
 	@Test
 	public void testNbImpair2(){
 		int tab[]={1,2,3,5,6,8,9};
-			assertTrue(Recherche.rechercheDansTableau(tab,4));
+			assertFalse(Recherche.rechercheDansTableau(tab,4));
 	}
 	
 	@Test
@@ -65,7 +65,7 @@ public class TestRecherche {
 	@Test
 	public void testNbImpairDébut2(){
 		int tab[]={1,2,3,5,6,8,9};
-			assertTrue(Recherche.rechercheDansTableau(tab,0));
+			assertFalse(Recherche.rechercheDansTableau(tab,0));
 	}
 	
 	
@@ -78,7 +78,7 @@ public class TestRecherche {
 	@Test
 	public void testRechercheDernierePosNbImpair2(){
 		int tab[]={1,2,3,5,6,8,9};
-			assertTrue(Recherche.rechercheDansTableau(tab,10));
+			assertFalse(Recherche.rechercheDansTableau(tab,10));
 	}
 	
 	public static void main(String[] args) {
