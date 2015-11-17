@@ -8,7 +8,7 @@ public class Main {
 		int tabEx[] = {1,63,15,9,-11,11,14,0,5} ; 
 		int str ;
 		String sortie ; 
-		/*tri*/
+		Tri.triInsertionTableau(tabEx); 
 		do
 		{	Scanner sc = new Scanner(System.in);
 			System.out.println("Saisir le nombre que vous recherchez : \n");
