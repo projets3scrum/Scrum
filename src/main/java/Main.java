@@ -16,7 +16,7 @@ public class Main {
 			Recherche.rechercheDansTableau(tabEx, str ) ;
 			
 			Scanner sc2 = new Scanner(System.in);
-			System.out.println("Voulez vous partir ? O/N \n");
+			System.out.println("Vouler vous partir ? O/N \n");
 			sortie = sc2.nextLine();
 			
 			
