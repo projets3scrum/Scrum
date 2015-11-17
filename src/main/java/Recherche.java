@@ -21,8 +21,14 @@ public class Recherche{
 		    else debut = milieu; 
 		    }
 		  
-		  if(tab[debut] == val) return true;
-		  else return false;
+		  if(tab[debut] == val) {
+			  System.out.println("La valeur " + val + " a été trouvée.");
+			  return true;
+		  }
+		  else {
+			  System.out.println("La valeur " + val + " n'a pas été trouvée.");
+			  return false;
+		  }
 	}
 	
 	
