@@ -26,7 +26,7 @@ public class Recherche{
 			  return true;
 		  }
 		  else {
-			  System.out.println("La valeur " + val + " n'a aps été trouvée.");
+			  System.out.println("La valeur " + val + " n'a pas été trouvée.");
 			  return false;
 		  }
 	}
